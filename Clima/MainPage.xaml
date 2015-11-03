@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Clima.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Clima"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          Padding="10"
+          >
+
+        <StackPanel>
+            <TextBlock Text="Clima Popayan" Style="{StaticResource HeaderTextBlockStyle}"
+                       Margin="0,0,0,10"
+                       />
+            <TextBlock x:Name="pronostico" Text="Pronostico" Style="{StaticResource TitleTextBlockStyle}"
+                       Margin="0,0,0,10"
+                       />
+            
+            <TextBlock Text="Temperatura:" Style="{StaticResource SubtitleTextBlockStyle}"
+                       
+                       />
+            <TextBlock x:Name="temperatura" Style="{StaticResource BodyTextBlockStyle}"
+                       Text="0"
+                       Margin="0,0,0,10"/>
+
+            <TextBlock Text="Humedad:" Style="{StaticResource SubtitleTextBlockStyle}"
+                       
+                       />
+            <TextBlock x:Name="humedad" Style="{StaticResource BodyTextBlockStyle}"
+                       Text="0"
+                       Margin="0,0,0,10"/>
+
+            <TextBlock Text="Presion:" Style="{StaticResource SubtitleTextBlockStyle}"
+                       
+                       />
+            <TextBlock x:Name="presion" Style="{StaticResource BodyTextBlockStyle}"
+                       Text="0"
+                       Margin="0,0,0,10"/>
+
+
+        </StackPanel>
+        
+    </Grid>
+</Page>
